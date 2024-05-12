@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Londrina Solid' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/nav-index.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="cuadro-izquierdo"></div>
+        <div class="busqueda">
+            <input class="texto-buscar" type="text">
+            <img src="../img/lupa.png" alt="buscar">
+        </div>
+        <div class="carrito">
+            <img src="../img/carrito.png" alt="carrito">
+        </div>
+        <div class="usuario-icon">
+            <img src="../img/icon-user.png" alt="user">
+        </div>
+    </div>
+    <div class="menu-opciones">
+        <ul class="opciones">
+            <li class="item item--1">
+                <a class="lista-link">Inicio</a>
+            </li>
+            <li class="item item--2">
+                <a class="lista-link">¡Nuevo!</a>
+            </li>
+            <li class="item--">
+                <div class="item item--3">
+                    <a class="lista-link">Categorías</a>
+                </div>
+                <ul class="opciones-2">
+                    <li class="item-2">
+                        <a class="lista-link">Amigurumis</a>
+                    </li>
+                    <li class="item-2">
+                        <a class="lista-link">Carteras</a>
+                    </li>
+                    <li class="item-2">
+                        <a class="lista-link">Llaveros</a>
+                    </li>
+                    <li class="item-2">
+                        <a class="lista-link">Ramos</a>
+                    </li>
+                    <li class="item-2">
+                        <a class="lista-link">Accesorios</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="item item--4">
+                <a class="lista-link">Promociones</a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        let listElements = document.querySelectorAll('.item--3');
+
+        listElements.forEach(listElement => {
+            listElement.addEventListener('click', () => {
+                let menu = listElement.nextElementSibling;
+                menu.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

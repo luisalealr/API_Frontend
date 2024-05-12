@@ -10,54 +10,7 @@
 </head>
 
 <body>
-    <div class="nav">
-        <div class="cuadro-izquierdo"></div>
-        <div class="busqueda">
-            <input class="texto-buscar" type="text">
-            <img src="../img/lupa.png" alt="buscar">
-        </div>
-        <div class="carrito">
-            <img src="../img/carrito.png" alt="carrito">
-        </div>
-        <div class="usuario-icon">
-            <img src="../img/icon-user.png" alt="user">
-        </div>
-    </div>
-    <div class="menu-opciones">
-        <ul class="opciones">
-            <li class="item item--1">
-                <a class="lista-link">Inicio</a>
-            </li>
-            <li class="item item--2">
-                <a class="lista-link">¡Nuevo!</a>
-            </li>
-            <li class="item--">
-                <div class="item item--3">
-                    <a class="lista-link">Categorías</a>
-                </div>
-                <ul class="opciones-2">
-                    <li class="item-2">
-                        <a class="lista-link">Amigurumis</a>
-                    </li>
-                    <li class="item-2">
-                        <a class="lista-link">Carteras</a>
-                    </li>
-                    <li class="item-2">
-                        <a class="lista-link">Llaveros</a>
-                    </li>
-                    <li class="item-2">
-                        <a class="lista-link">Ramos</a>
-                    </li>
-                    <li class="item-2">
-                        <a class="lista-link">Accesorios</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="item item--4">
-                <a class="lista-link">Promociones</a>
-            </li>
-        </ul>
-    </div>
+    <iframe class="header" src="../views/nabvar-index.html"></iframe>
     <div class="imagen-index">
         <div class="centrado">
             <h1>Entre hilos y agujas, tejemos sueños y creamos magia</h1>
@@ -125,34 +78,50 @@
             <h1>Productos en Descuento</h1>
             <div class="contenedor-productos">
                 <div class="producto-info">
-                    <img class="img-fondo" src="../img/Fotos productos/Sapa Ph.png" alt="">
+                    <div class="fondo-producto">
+                        <div class="envio">
+                            <img src="../img/free.png" alt="">
+                        </div>
+                        <img class="img-fondo" src="../img/Fotos productos/Sapa Ph.png" alt="">
+                        <div class="descuento">
+                            <h2>-50%</h2>
+                        </div>
+                    </div>
                     <div class="informacion-producto">
                         <h2 class="nombre-producto">Sapo con capa</h2>
-                    <h2 class="precio-producto">40.000</h2>
+                        <h2 class="precio-producto">40.000</h2>
                     </div>
-                    
                     <div class="boton-producto">
                         <a>Añadir al carrito</a>
                     </div>
                 </div>
                 <div class="producto-info">
-                    <img class="img-fondo" src="../img/Fotos productos/Ramo girasoles.png" alt="">
+                    <div class="fondo-producto">
+                        <img class="img-fondo" src="../img/Fotos productos/Ramo girasoles.png" alt="">
+                        <div class="descuento">
+                            <h2>-70%</h2>
+                        </div>
+                    </div>
                     <div class="informacion-producto">
                         <h2 class="nombre-producto">Ramo de girasoles</h2>
-                    <h2 class="precio-producto">40.000</h2>
+                        <h2 class="precio-producto">40.000</h2>
                     </div>
-                    
                     <div class="boton-producto">
                         <a>Añadir al carrito</a>
                     </div>
                 </div>
                 <div class="producto-info">
-                    <img class="img-fondo" src="../img/Fotos productos/Conejo gigante con vestido rojo.png" alt="">
+                    <div class="fondo-producto">
+                        <div class="envio">
+                            <img src="../img/free.png" alt="">
+                        </div>
+                        <img class="img-fondo" src="../img/Fotos productos/Conejo gigante con vestido rojo.png" alt="">
+                    </div>
                     <div class="informacion-producto">
                         <h2 class="nombre-producto">Conejo vestido de fresa</h2>
-                    <h2 class="precio-producto">170.000</h2>
+                        <h2 class="precio-producto">170.000</h2>
                     </div>
-                    
+
                     <div class="boton-producto">
                         <a>Añadir al carrito</a>
                     </div>
@@ -177,16 +146,8 @@
             <h2 class="piso">Lula Crochet - Tienda de Crochet y tus mejores productos Artesanales</h2>
         </div>
     </div>
-    <script>
-        let listElements = document.querySelectorAll('.item--3');
-
-        listElements.forEach(listElement => {
-            listElement.addEventListener('click', () => {
-                let menu = listElement.nextElementSibling;
-                menu.classList.toggle('active');
-            });
-        });
-    </script>
+    <div class="footer"></div>
+    
 </body>
 
 </html>
