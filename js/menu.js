@@ -7,5 +7,3 @@ listElements.forEach(listElement => {
     });
 });
 
-//ejecutar funcion con click
-document.getElementById("btn-open").addEventListener("click", open_close_menu);
