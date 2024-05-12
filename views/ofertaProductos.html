@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas de Productos</title>
+    <link rel="stylesheet" href="../css/cuadricula.css">
+    <link rel="stylesheet" href="../css/ofertaProductos.css">
+
+</head>
+<body>
+    <div class="contenedor" id="contenedor">
+        <iframe class="header" src="../views/navbar.html"></iframe>
+        <iframe class="menu" src="../views/menu.html"></iframe>
+        <div class="contenido">
+            <h2 class="titulo">Ofertas de Productos</h2>
+            <div class="ofertaProductos">
+                <div class="descuento">
+                    <label for="descuento">Descuento </label>
+                    <input type="text" name="descuento" id="descuento">
+                </div>
+                <div class="envioGratis">
+                    <label for="envio">Envio Gratis?</label>
+                    <input type="text" name="envio" id="envio">
+                </div>
+                <div class="fechaInicio">
+                    <label for="fechaInicio">Inicio</label>
+                    <input type="date" name="fechaIncio" id="fechaInicio">
+                </div>
+                <div class="fechaFin">
+                    <label for="fechaFin">Fin</label>
+                    <input type="date" name="fechaFin" id="fechaFin">
+                </div>
+                <div>
+                    <a href="../views/editarOferta.html">
+                        <img src="../img/iconEditar.png" alt="editar" class="editar-icon">
+                    </a>
+                    <a href=""> 
+                    <img src="../img/iconEliminar.png" alt="eliminar" class="eliminar-icon">
+                    </a>
+                </div>
+            </div>
+            <div class="botones">
+                <button id="agregatBtn">Agregar Oferta</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
