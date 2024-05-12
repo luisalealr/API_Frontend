@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ofertas de Productos</title>
+    <link href='https://fonts.googleapis.com/css?family=Londrina Solid' rel='stylesheet'>
     <link rel="stylesheet" href="../css/cuadricula.css">
     <link rel="stylesheet" href="../css/ofertaProductos.css">
 
@@ -15,23 +16,25 @@
         <div class="contenido">
             <h2 class="titulo">Ofertas de Productos</h2>
             <div class="ofertaProductos">
-                <div class="descuento">
-                    <label for="descuento">Descuento </label>
-                    <input type="text" name="descuento" id="descuento">
+                <div class="formulario">
+                    <div class="item-form">
+                        <label class="texto" for="descuento">Descuento </label>
+                        <input type="text" name="descuento" id="descuento">
+                    </div>
+                    <div class="item-form">
+                        <label class="texto" for="envio">Envio Gratis?</label>
+                        <input type="text" name="envio" id="envio">
+                    </div>
+                    <div class="item-form">
+                        <label class="texto" for="fechaInicio">Inicio</label>
+                        <input type="date" name="fechaIncio" id="fechaInicio">
+                    </div>
+                    <div class="item-form">
+                        <label class="texto" for="fechaFin">Fin</label>
+                        <input type="date" name="fechaFin" id="fechaFin">
+                    </div>
                 </div>
-                <div class="envioGratis">
-                    <label for="envio">Envio Gratis?</label>
-                    <input type="text" name="envio" id="envio">
-                </div>
-                <div class="fechaInicio">
-                    <label for="fechaInicio">Inicio</label>
-                    <input type="date" name="fechaIncio" id="fechaInicio">
-                </div>
-                <div class="fechaFin">
-                    <label for="fechaFin">Fin</label>
-                    <input type="date" name="fechaFin" id="fechaFin">
-                </div>
-                <div>
+                <div class="botones-cuadro">
                     <a href="../views/editarOferta.html">
                         <img src="../img/iconEditar.png" alt="editar" class="editar-icon">
                     </a>
