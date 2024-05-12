@@ -1,0 +1,36 @@
+/*Estilos para insertar el menu y navbar*/
+
+body {
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    grid-template-rows: 55px 100vh;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row: 1;
+    border-style: none;
+}
+
+.menu {
+    grid-column: 1;
+    grid-row: 2;
+    border-style: none;
+}
+
+.contenido {
+    grid-column: 2;
+    grid-row: 2;
+    border-style: none;
+    align-items: center;
+}
