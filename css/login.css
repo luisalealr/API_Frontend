@@ -48,6 +48,16 @@ body {
     border-radius: 30px;
 }
 
+.recuperar-contraseña{
+    border: none;
+    background-color: #574B41;
+    color: white;
+    font-size: 20px;
+    width: 220px;
+    height: 40px;
+    border-radius: 30px;
+}
+
 .item-form{
     display: flex;
     flex-direction: row;
