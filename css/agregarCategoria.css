@@ -54,15 +54,18 @@
     color: #729956;
 }
 
-.categoria-boton{
+.categoria-boton, .categoria-boton-2{
     border-radius: 20px;
     border: none;
     padding: 10px;
-    background-color: #574B41;
     color: white;
     width: 200px;
     font-size: 20px;
     cursor: pointer;
+}
+
+.categoria-boton{
+    background-color: #574B41;
 }
 
 /*Ver categorias*/
@@ -116,4 +119,8 @@
 
 .boton-eliminar{
     background-color: #BF6767;
+}
+
+.categoria-boton-2{
+    background-color: #729956;
 }
