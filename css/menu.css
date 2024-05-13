@@ -1,4 +1,7 @@
 /*Menu*/
+* {
+    margin: 0;
+}
 
 .cuerpo {
     background-color: #B9D696EE;

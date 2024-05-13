@@ -1,92 +1,97 @@
-<div class="cuerpo"> <!-- div de todo el menú-->
-    <div class="menu-principal" id="menu-principal">
-        <ul class="lista-principal-menu" id="lista-close"> <!--Lista general del menu-->
-            <li class="lista-principal lista-principal--click"> <!--items (todos son de la misma forma)-->
-                <div class="lista-item">
-                    <a class="lista-link">Estadísticas</a>
-                </div>
-                <ul class="lista-secundaria"> <!--subitems (todos son de la misma forma)-->
-                    <li class="lista-item-2 lista-subitem">
-                        <a class="lista-link">Rendimiento</a>
-                    </li>
-                    <li class="lista-item-2 lista-subitem">
-                        <a class="lista-link">Los más vendidos</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="lista-principal lista-principal--click">
-                <div class="lista-item">
-                    <a class="lista-link">Catálogo</a>
-                </div>
-                <ul class="lista-secundaria">
-                    <li class="lista-item-2 lista-subitem">
-                        <a class="lista-link">Agregar producto</a>
-                    </li>
-                    <li class="lista-item-2 lista-subitem">
-                        <a class="lista-link">Ver productos</a>
-                    </li>
-                    <li class="lista-item-2 lista-subitem">
-                        <a class="lista-link">Agregar categorías</a>
-                    </li>
-                    <li class="lista-item-2 lista-subitem">
-                        <a class="lista-link">Ver categorías</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="lista-principal  lista-principal--click">
-                <div class="lista-item">
-                    <a class="lista-link">Entregas</a>
-                </div>
-                <ul class="lista-secundaria">
-                    <li class="lista-item-2 lista-subitem">
-                        <a class="lista-link">Pendientes</a>
-                    </li>
-                    <li class="lista-item-2 lista-subitem">
-                        <a class="lista-link">Completadas</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="lista-principal lista-principal--click">
-                <div class="lista-item">
-                    <a class="lista-link">Usuarios</a>
-                </div>
-                <ul class="lista-secundaria">
-                    <li class="lista-item-2 lista-subitem">
-                        <a class="lista-link">Agregar usuarios</a>
-                    </li>
-                    <li class="lista-item-2 lista-subitem">
-                        <a class="lista-link">Ver usuarios</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="lista-principal  lista-principal--click">
-                <div class="lista-item">
-                    <a class="lista-link">Devoluciones</a>
-                </div>
-            </li>
-            <li class="lista-principal  lista-principal--click">
-                <div class="lista-item">
-                    <a class="lista-link">Marketing</a>
-                </div>
-                <ul class="lista-secundaria">
-                    <li class="lista-item-2 lista-subitem">
-                        <a class="lista-link">Promociones</a>
-                    </li>
-                    <li class="lista-item-2 lista-subitem">
-                        <a class="lista-link">Generar códigos</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-</div>
-<script>
-    let listElements = document.querySelectorAll('.lista-item');
+<!DOCTYPE html>
+<html lang="en">
 
-    listElements.forEach(listElement => {
-        listElement.addEventListener('click', () => { //detecta el evento click en los items de la lista del menú
-            let menu = listElement.nextElementSibling;
-            menu.classList.toggle('active');
-        });
-    });
-</script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link href='https://fonts.googleapis.com/css?family=Londrina Solid' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="cuerpo"> <!-- div de todo el menú-->
+        <div class="menu-principal" id="menu-principal">
+            <ul class="lista-principal-menu" id="lista-close"> <!--Lista general del menu-->
+                <li class="lista-principal lista-principal--click"> <!--items (todos son de la misma forma)-->
+                    <div class="lista-item">
+                        <a class="lista-link">Estadísticas</a>
+                    </div>
+                    <ul class="lista-secundaria"> <!--subitems (todos son de la misma forma)-->
+                        <li class="lista-item-2 lista-subitem">
+                            <a class="lista-link">Rendimiento</a>
+                        </li>
+                        <li class="lista-item-2 lista-subitem">
+                            <a class="lista-link">Los más vendidos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="lista-principal lista-principal--click">
+                    <div class="lista-item">
+                        <a class="lista-link">Catálogo</a>
+                    </div>
+                    <ul class="lista-secundaria">
+                        <li class="lista-item-2 lista-subitem">
+                            <a class="lista-link">Agregar producto</a>
+                        </li>
+                        <li class="lista-item-2 lista-subitem">
+                            <a class="lista-link">Ver productos</a>
+                        </li>
+                        <li class="lista-item-2 lista-subitem">
+                            <a class="lista-link">Agregar categorías</a>
+                        </li>
+                        <li class="lista-item-2 lista-subitem">
+                            <a class="lista-link">Ver categorías</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="lista-principal  lista-principal--click">
+                    <div class="lista-item">
+                        <a class="lista-link">Entregas</a>
+                    </div>
+                    <ul class="lista-secundaria">
+                        <li class="lista-item-2 lista-subitem">
+                            <a class="lista-link">Pendientes</a>
+                        </li>
+                        <li class="lista-item-2 lista-subitem">
+                            <a class="lista-link">Completadas</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="lista-principal lista-principal--click">
+                    <div class="lista-item">
+                        <a class="lista-link">Usuarios</a>
+                    </div>
+                    <ul class="lista-secundaria">
+                        <li class="lista-item-2 lista-subitem">
+                            <a class="lista-link">Agregar usuarios</a>
+                        </li>
+                        <li class="lista-item-2 lista-subitem">
+                            <a class="lista-link">Ver usuarios</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="lista-principal  lista-principal--click">
+                    <div class="lista-item">
+                        <a class="lista-link">Devoluciones</a>
+                    </div>
+                </li>
+                <li class="lista-principal  lista-principal--click">
+                    <div class="lista-item">
+                        <a class="lista-link">Marketing</a>
+                    </div>
+                    <ul class="lista-secundaria">
+                        <li class="lista-item-2 lista-subitem">
+                            <a class="lista-link">Promociones</a>
+                        </li>
+                        <li class="lista-item-2 lista-subitem">
+                            <a class="lista-link">Generar códigos</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="../js/menu.js"></script>
+</body>
+
+</html>
