@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/cuadricula.css">
     <link rel="stylesheet" href="../css/editarRol.css">
     <link href='https://fonts.googleapis.com/css?family=Londrina Solid' rel='stylesheet'>
+    <link rel="stylesheet" href="../js/editarRol.js">
 </head>
 
 <body>
@@ -17,14 +18,20 @@
         <div class="contenido">
             <h2>Cambiar rol</h2>
             <div class="cuadrilla">
-                
-                <div class="menuDesplegable">
-                    <button class="rol">Rol</button>
-                    <div class="Roles">
-                        <a href="#">chapulincolorado</a>
-                        <a href="#">ultron</a>
-                        <a href="#">megamente</a>
+                <h3>Rol:</h3>
+                <div class="dropdown">
+                    <div class="select">
+                        <span class="selected">Seleccione</span>
+                        <div class="caret"></div>
                     </div>
+                    <ul class="manu">
+                        <li>Administrador</li>
+                        <li>Usuario</li>
+                        <li>CEO</li>
+                    </ul>
+                </div>
+                <div class="boton">
+                    <button class="guardar">Guardar</button>
                 </div>
 
             </div>
