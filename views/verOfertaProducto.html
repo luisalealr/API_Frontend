@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="../css/verOfertaProducto.css">
 
 </head>
+
 <body>
     <div class="contenedor" id="contenedor">
         <iframe class="header" src="../views/navbar.html"></iframe>
@@ -16,27 +18,30 @@
         <div class="contenido">
             <h2 class="titulo">Ver ofertas de Productos</h2>
             <div class="ofertaProductos">
-                <div class="formulario">
-                    <div class="item-form">
-                        <label class="texto" for="nombreProducto">Nombre del Producto</label>
+                <div class="producto-oferta">
+                    <div class="producto-info">
+                        <div class="item-form">
+                            <label class="texto" for="nombreProducto">Nombre del Producto</label>
+                        </div>
+                        <div class="imagen-producto">
+                            <img src="../img/Fotos productos/Ajolote.png" alt="imagen-producto" class="imagen-producto">
+                        </div>
                     </div>
-                    <div class="imagen-producto">
-                        <img src="../img/Fotos productos/Ajolote.png" alt="imagen-producto" class="imagen-producto">
-                    </div>
-                    <div class="item-form">
-                        <label class="texto" for="nombre">Nombre: </label>
-                        <input type="text" name="nombre" id="nombre">
-                    </div>
-                    <div class="item-form">
-                        <label class="texto" for="categoria">Categoria:</label>
-                        <input type="text" name="categoria" id="categoria">
+                    <div class="formulario">
+                        <div class="item-form">
+                            <label class="texto" for="nombre">Nombre:</label>
+                            <input type="text" name="nombre" id="nombre">
+                        </div>
+                        <div class="item-form">
+                            <label class="texto" for="categoria">Categoria:</label>
+                            <input type="text" name="categoria" id="categoria">
+                        </div>
                     </div>
                 </div>
-                <div class="botones">
-                    <button id="verBtn">Ver Ofertas</button>
-                </div>
+                <button class="boton" id="verBtn">Ver Ofertas</button>
             </div>
         </div>
     </div>
 </body>
+
 </html>
