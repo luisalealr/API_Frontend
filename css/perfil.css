@@ -10,10 +10,12 @@
     justify-content: center;
     flex-direction: column;
     margin-bottom: 20px;
+    margin-top: 50px;
 }
 
 .titulo{
     color: #729956;
+    margin-bottom: 50px;
 }
    
 
@@ -31,10 +33,12 @@
 
 .infoPerfil h2 {
     margin: 5px 0;
+    margin-bottom: 20px;
 }
 
 .buttons{
     margin-top: 20px;
+    margin-bottom: 500px;
 }
 
 .buttons button {

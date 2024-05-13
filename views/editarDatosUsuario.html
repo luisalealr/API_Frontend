@@ -1,36 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar Datos Personales</title>
-    <link rel="stylesheet" href="../css/editarDatosUsuario.css">
+    <link href='https://fonts.googleapis.com/css?family=Londrina Solid' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/nav-index.css">
+    <title>Lula Crochet</title>
 </head>
+
 <body>
-    <div class="contenido">
-        <h2 class="titulo">Editar Datos Personales</h2>
-        <div class="editarDatos">
-            <div class="nombre">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
+    <div class="navegacion"></div>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Editar Datos Personales</title>
+        <link rel="stylesheet" href="../css/editarDatosUsuario.css">
+    </head>
+    <body>
+        <div class="contenido">
+            <h2 class="titulo">Editar Datos Personales</h2>
+            <div class="editarDatos">
+                <div class="nombre">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="apellido">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+                <div class="celular">
+                    <label for="celular">Celular:</label>
+                    <input type="text" id="celular" name="celular" required>
+                </div>
+                <div class="foto">
+                    <label for="foto">Foto: (Maximo 10 MB)</label>
+                    <input type="file" id="foto" name="foto" accept="image/*" required>
+                    <button type="button" id="cargarBtn">Cargar</button>
+                </div>
             </div>
-            <div class="apellido">
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="apellido" required>
-            </div>
-            <div class="celular">
-                <label for="celular">Celular:</label>
-                <input type="text" id="celular" name="celular" required>
-            </div>
-            <div class="foto">
-                <label for="foto">Foto: (Maximo 10 MB)</label>
-                <input type="file" id="foto" name="foto" accept="image/*" required>
-                <button type="button" id="cargarBtn">Cargar</button>
-            </div>
+                <div class="guardarBtn">
+                    <button type="button" id="guardarBtn">Guardar</button>
+                </div>
         </div>
-            <div class="guardarBtn">
-                <button type="button" id="guardarBtn">Guardar</button>
-            </div>
-    </div>
+    </body>
+    </html>
+    
+    <div class="footer"></div>
+    <script src="../js/navbar-index.js"></script>
 </body>
 </html>
