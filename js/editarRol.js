@@ -1,28 +1,10 @@
-const dropdowns = document.querySelectorAll('.dropdown');
+let listElements = document.querySelectorAll('.clic');
 
-dropdowns.forEach(dropdown => {
-    const select = dropdown.querySelector('.select');
-    const caret = dropdown.querySelector('.caret');
-    const manu = dropdown.querySelector('.manu');
-    const option = dropdown.querySelectorAll('.manu li');
-    const selected = dropdown.querySelector('.selected');
-
-    select.addEventListener('click', () => {
-        select.classList.toggle('select-clicked');
-        caret.classList.toggle('carect-rotate');
-        manu.classList.toggle('manu-open');
-    });
-    option.forEach(option => {
-        option.addEventListener('click', () => {
-            selected.innerText = option.innerText;
-            select.classList.remove('select-clicked');
-            caret.classList.remove('carect-rotate');
-            manu.classList.remove('manu-open');
-            option.forEach(option => {
-                option.classList.remove('active');
-
-            });
-            option.classList.add ('active');
-        });
+listElements.forEach(listElement => {
+    listElement.addEventListener('click', () => { //detecta el evento click en los items de la lista del menú
+        listElement.classList.toggle('arrow'); //agrega la clase arrow
+        let menu = listElement.nextElementSibling;
+        menu.classList.toggle('active');
     });
 });
+
