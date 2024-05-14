@@ -8,7 +8,6 @@
 .contenido {
     text-align: center;
     margin-top: 50px; 
-    font-weight: bold;    
 }
 
 .titulo {
@@ -59,12 +58,12 @@ margin-right: 10px;
 .botones button{
     border-radius: 20px;
     border: none;
-    padding: 10px ;
+    padding: 10px 20px ;
     background-color: #D0A25E;
     color: white;
-    font-weight: bold;
     margin-top: 50px;
     cursor: pointer;
+    font-size: 20px;
 }
 
 .fechaInicio label{
