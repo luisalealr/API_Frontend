@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Londrina Solid';
+    letter-spacing: 1px;
+}
+
+h2 {
+    margin-top: 50px;
+    font-size: 60px;
+    color: rgba(114, 153, 86, 1);
+}
+
+.contenido {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.poteMayor label {
+    color: rgba(114, 153, 86, 1);
+    font-size: 20px;
+}
+
+.item label {
+    color: rgba(114, 153, 86, 1);
+    font-size: 20px;
+}
+
+.item input {
+    background-color: rgba(213, 213, 213, 0.93);
+    border-radius: 20px;
+    border: none;
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+label {
+    color: rgba(114, 153, 86, 1);
+    font-size: 20px;
+}
+.poteMayor{
+    margin-top: 30px;
+    width: 330px;
+}
+.info button {
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color:rgba(114, 153, 86, 1);
+}
+.info .lastboton{
+    background-color:rgba(87, 75, 65, 1);
+    
+}
+.item{
+    
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    
+}
+
+.yoto{
+    width: 200px;
+}
